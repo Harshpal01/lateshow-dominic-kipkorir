@@ -10,7 +10,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 migrate = Migrate(app, db)
 
-# ✅ Register the routes blueprint
 app.register_blueprint(routes)
 
 @app.route('/')

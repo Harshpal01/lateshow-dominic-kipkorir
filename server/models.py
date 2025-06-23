@@ -1,5 +1,5 @@
 from sqlalchemy.orm import validates
-from server.extensions import db  # Use the shared db instance
+from server.extensions import db 
 
 class Episode(db.Model):
     __tablename__ = 'episodes'
